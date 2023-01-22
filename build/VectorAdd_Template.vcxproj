@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FBC79DE9-6CB8-3800-B507-741C5AED5635}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>VectorAdd_Template</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">VectorAdd_Template.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">VectorAdd_Template</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">VectorAdd_Template.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">VectorAdd_Template</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">VectorAdd_Template.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">VectorAdd_Template</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">VectorAdd_Template.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">VectorAdd_Template</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\libwb;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\libwb;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\libwb;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\lib\x64\cudart_static.lib;Debug\wb.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\lib\x64\cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/Debug/VectorAdd_Template.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/Debug/VectorAdd_Template.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\libwb;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\libwb;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\libwb;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\lib\x64\cudart_static.lib;Release\wb.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\lib\x64\cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/Release/VectorAdd_Template.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/Release/VectorAdd_Template.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\libwb;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\libwb;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\libwb;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\lib\x64\cudart_static.lib;MinSizeRel\wb.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\lib\x64\cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/MinSizeRel/VectorAdd_Template.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/MinSizeRel/VectorAdd_Template.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\libwb;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\libwb;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\libwb;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\lib\x64\cudart_static.lib;RelWithDebInfo\wb.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\lib\x64\cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/RelWithDebInfo/VectorAdd_Template.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/RelWithDebInfo/VectorAdd_Template.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\VectorAdd\template.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building NVCC (Device) object CMakeFiles/VectorAdd_Template.dir/VectorAdd/$(Configuration)/VectorAdd_Template_generated_template.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd "C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\VectorAdd_Template.dir\VectorAdd"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/CMakeFiles/VectorAdd_Template.dir/VectorAdd/$(Configuration)"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D "generated_file:STRING=C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/CMakeFiles/VectorAdd_Template.dir/VectorAdd/$(Configuration)/VectorAdd_Template_generated_template.cu.obj" -D "generated_cubin_file:STRING=C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/CMakeFiles/VectorAdd_Template.dir/VectorAdd/$(Configuration)/VectorAdd_Template_generated_template.cu.obj.cubin.txt" -P "C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/CMakeFiles/VectorAdd_Template.dir/VectorAdd/VectorAdd_Template_generated_template.cu.obj.Debug.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\VectorAdd_Template.dir\VectorAdd\VectorAdd_Template_generated_template.cu.obj.depend;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\VectorAdd_Template.dir\VectorAdd\VectorAdd_Template_generated_template.cu.obj.Debug.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\VectorAdd_Template.dir\VectorAdd\$(Configuration)\VectorAdd_Template_generated_template.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building NVCC (Device) object CMakeFiles/VectorAdd_Template.dir/VectorAdd/$(Configuration)/VectorAdd_Template_generated_template.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd "C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\VectorAdd_Template.dir\VectorAdd"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/CMakeFiles/VectorAdd_Template.dir/VectorAdd/$(Configuration)"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D "generated_file:STRING=C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/CMakeFiles/VectorAdd_Template.dir/VectorAdd/$(Configuration)/VectorAdd_Template_generated_template.cu.obj" -D "generated_cubin_file:STRING=C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/CMakeFiles/VectorAdd_Template.dir/VectorAdd/$(Configuration)/VectorAdd_Template_generated_template.cu.obj.cubin.txt" -P "C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/CMakeFiles/VectorAdd_Template.dir/VectorAdd/VectorAdd_Template_generated_template.cu.obj.Release.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\VectorAdd_Template.dir\VectorAdd\VectorAdd_Template_generated_template.cu.obj.depend;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\VectorAdd_Template.dir\VectorAdd\VectorAdd_Template_generated_template.cu.obj.Release.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\VectorAdd_Template.dir\VectorAdd\$(Configuration)\VectorAdd_Template_generated_template.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building NVCC (Device) object CMakeFiles/VectorAdd_Template.dir/VectorAdd/$(Configuration)/VectorAdd_Template_generated_template.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd "C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\VectorAdd_Template.dir\VectorAdd"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/CMakeFiles/VectorAdd_Template.dir/VectorAdd/$(Configuration)"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D "generated_file:STRING=C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/CMakeFiles/VectorAdd_Template.dir/VectorAdd/$(Configuration)/VectorAdd_Template_generated_template.cu.obj" -D "generated_cubin_file:STRING=C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/CMakeFiles/VectorAdd_Template.dir/VectorAdd/$(Configuration)/VectorAdd_Template_generated_template.cu.obj.cubin.txt" -P "C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/CMakeFiles/VectorAdd_Template.dir/VectorAdd/VectorAdd_Template_generated_template.cu.obj.MinSizeRel.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\VectorAdd_Template.dir\VectorAdd\VectorAdd_Template_generated_template.cu.obj.depend;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\VectorAdd_Template.dir\VectorAdd\VectorAdd_Template_generated_template.cu.obj.MinSizeRel.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\VectorAdd_Template.dir\VectorAdd\$(Configuration)\VectorAdd_Template_generated_template.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building NVCC (Device) object CMakeFiles/VectorAdd_Template.dir/VectorAdd/$(Configuration)/VectorAdd_Template_generated_template.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd "C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\VectorAdd_Template.dir\VectorAdd"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/CMakeFiles/VectorAdd_Template.dir/VectorAdd/$(Configuration)"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D "generated_file:STRING=C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/CMakeFiles/VectorAdd_Template.dir/VectorAdd/$(Configuration)/VectorAdd_Template_generated_template.cu.obj" -D "generated_cubin_file:STRING=C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/CMakeFiles/VectorAdd_Template.dir/VectorAdd/$(Configuration)/VectorAdd_Template_generated_template.cu.obj.cubin.txt" -P "C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/CMakeFiles/VectorAdd_Template.dir/VectorAdd/VectorAdd_Template_generated_template.cu.obj.RelWithDebInfo.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\VectorAdd_Template.dir\VectorAdd\VectorAdd_Template_generated_template.cu.obj.depend;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\VectorAdd_Template.dir\VectorAdd\VectorAdd_Template_generated_template.cu.obj.RelWithDebInfo.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\VectorAdd_Template.dir\VectorAdd\$(Configuration)\VectorAdd_Template_generated_template.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/source" "-BC:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build" --check-stamp-file "C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindCUDA\run_nvcc.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\3.23.0-rc1\CMakeCCompiler.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\3.23.0-rc1\CMakeCXXCompiler.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\3.23.0-rc1\CMakeRCCompiler.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\3.23.0-rc1\CMakeSystem.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\DeviceQuery_Template.dir\DeviceQuery\DeviceQuery_Template_generated_template.cu.obj.cmake.pre-gen;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\DeviceQuery_Template.dir\DeviceQuery\DeviceQuery_Template_generated_template.cu.obj.depend;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\VectorAdd_Template.dir\VectorAdd\VectorAdd_Template_generated_template.cu.obj.cmake.pre-gen;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\VectorAdd_Template.dir\VectorAdd\VectorAdd_Template_generated_template.cu.obj.depend;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\DeviceQuery\sources.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\VectorAdd\sources.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\libwb\sources.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/source" "-BC:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build" --check-stamp-file "C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindCUDA\run_nvcc.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\3.23.0-rc1\CMakeCCompiler.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\3.23.0-rc1\CMakeCXXCompiler.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\3.23.0-rc1\CMakeRCCompiler.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\3.23.0-rc1\CMakeSystem.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\DeviceQuery_Template.dir\DeviceQuery\DeviceQuery_Template_generated_template.cu.obj.cmake.pre-gen;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\DeviceQuery_Template.dir\DeviceQuery\DeviceQuery_Template_generated_template.cu.obj.depend;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\VectorAdd_Template.dir\VectorAdd\VectorAdd_Template_generated_template.cu.obj.cmake.pre-gen;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\VectorAdd_Template.dir\VectorAdd\VectorAdd_Template_generated_template.cu.obj.depend;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\DeviceQuery\sources.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\VectorAdd\sources.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\libwb\sources.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/source" "-BC:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build" --check-stamp-file "C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindCUDA\run_nvcc.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\3.23.0-rc1\CMakeCCompiler.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\3.23.0-rc1\CMakeCXXCompiler.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\3.23.0-rc1\CMakeRCCompiler.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\3.23.0-rc1\CMakeSystem.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\DeviceQuery_Template.dir\DeviceQuery\DeviceQuery_Template_generated_template.cu.obj.cmake.pre-gen;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\DeviceQuery_Template.dir\DeviceQuery\DeviceQuery_Template_generated_template.cu.obj.depend;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\VectorAdd_Template.dir\VectorAdd\VectorAdd_Template_generated_template.cu.obj.cmake.pre-gen;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\VectorAdd_Template.dir\VectorAdd\VectorAdd_Template_generated_template.cu.obj.depend;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\DeviceQuery\sources.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\VectorAdd\sources.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\libwb\sources.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/source" "-BC:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build" --check-stamp-file "C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindCUDA\run_nvcc.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\3.23.0-rc1\CMakeCCompiler.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\3.23.0-rc1\CMakeCXXCompiler.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\3.23.0-rc1\CMakeRCCompiler.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\3.23.0-rc1\CMakeSystem.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\DeviceQuery_Template.dir\DeviceQuery\DeviceQuery_Template_generated_template.cu.obj.cmake.pre-gen;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\DeviceQuery_Template.dir\DeviceQuery\DeviceQuery_Template_generated_template.cu.obj.depend;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\VectorAdd_Template.dir\VectorAdd\VectorAdd_Template_generated_template.cu.obj.cmake.pre-gen;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\VectorAdd_Template.dir\VectorAdd\VectorAdd_Template_generated_template.cu.obj.depend;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\DeviceQuery\sources.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\VectorAdd\sources.cmake;C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\libwb\sources.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\CMakeFiles\VectorAdd_Template.dir\VectorAdd\$(Configuration)\VectorAdd_Template_generated_template.cu.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\ZERO_CHECK.vcxproj">
+      <Project>{AAFA13E1-D575-3C2C-9D32-4249419AEFD1}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\wb.vcxproj">
+      <Project>{DDEF13F9-E6C8-3A8B-95FD-73A25985A361}</Project>
+      <Name>wb</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

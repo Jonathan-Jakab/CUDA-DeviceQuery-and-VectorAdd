@@ -1,0 +1,31 @@
+﻿  Building Custom Rule C:/Users/Jonny Apple Seed/Desktop/Homework/CSC 163/Labs/A0/source/CMakeLists.txt
+  wbArg.cpp
+  wbCUDA.cpp
+  wbDataset.cpp
+  wbDirectory.cpp
+  wbExit.cpp
+  wbExport.cpp
+  wbFile.cpp
+  wbImage.cpp
+  wbImport.cpp
+  wbInit.cpp
+  wbLogger.cpp
+  wbMPI.cpp
+  wbPPM.cpp
+  wbPath.cpp
+  wbSolution.cpp
+  wbSparse.cpp
+  wbTimer.cpp
+  json11.cpp
+C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\libwb\vendor\json11.cpp(270,12): warning C4244: 'return': conversion from 'const T' to 'double', possible loss of data
+          with
+          [
+              T=int64_t
+          ]
+C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\source\libwb\vendor\json11.cpp(295,12): warning C4244: 'return': conversion from 'const T' to 'double', possible loss of data
+          with
+          [
+              T=uint64_t
+          ]
+  Generating Code...
+  wb.vcxproj -> C:\Users\Jonny Apple Seed\Desktop\Homework\CSC 163\Labs\A0\build\Debug\wb.lib
